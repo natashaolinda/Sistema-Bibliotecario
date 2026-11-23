@@ -1,0 +1,26 @@
+SISTEMA DE GERENCIAMENTO BIBLIOTECÁRIO — ULBRA PALMAS
+Revisão para apresentação em 19/11/2026.
+
+ABRIR NO VS CODE
+1. Extraia o ZIP.
+2. Abra a pasta Sistema-Bibliotecario no VS Code.
+3. Abra index.html no navegador ou use Live Server.
+
+O QUE FOI AJUSTADO
+- Em Novo Empréstimo, foi removida a seleção redundante 'Obra / Exemplar'. A obra vem da ficha acessada ou do primeiro título disponível quando o fluxo é iniciado pelo menu.
+- Na devolução, a escolha entre multa paga no balcão e débito pendente é selecionável e fica registrada no armazenamento local.
+- Reservas: Retirar abre um formulário completo, salva a confirmação e sinaliza a reserva concluída.
+- Ver fila lista os leitores Rafael Oliveira e Camila Ferreira, com matrícula, ordem e data, no exemplo de O capital.
+- Datas de exemplo: todas são calculadas a partir do dia em que o sistema é aberto. Os empréstimos da aluna Mariana Costa ficam sempre no prazo (um vence no dia e outro em 2 dias), então a renovação funciona em qualquer data de avaliação. Reservas prontas seguem o prazo de 48 horas para retirada.
+- Mensagens visíveis de 'exemplo visual' foram retiradas das páginas operacionais.
+- O login aprovado foi preservado.
+- Menu lateral: Multas e Notificações passaram a aparecer no menu do aluno. Categorias e gêneros ficou exclusivo do administrador (chefe da biblioteca).
+- Perfis de acesso: não há página própria; o administrador altera o perfil na ficha do usuário, na aba Usuários.
+
+- Devolução: cada botão Devolver abre os dados do empréstimo escolhido (obra, leitor e prazo). Só O capital, de Rafael Oliveira, está em atraso e gera multa.
+
+IMPORTANTE SOBRE OS DADOS
+Esta versão é um protótipo acadêmico com estado armazenado localmente no navegador. Os totais grandes do layout de referência são ilustrativos e não equivalem a centenas de registros reais persistidos num servidor. As simulações não se conectam ao sistema institucional da Ulbra nem geram pagamentos reais.
+
+REINICIAR
+Para restaurar a base do protótipo, limpe o armazenamento local do navegador correspondente à página ou use a função de reinício, se estiver disponível no menu.
