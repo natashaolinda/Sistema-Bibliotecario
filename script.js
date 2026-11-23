@@ -12,7 +12,6 @@
 
 'use strict';
 // PROTÓTIPO ACADÊMICO: sem autenticação real, banco de dados ou envio de emails.
-// Regras revisadas pela aluna no PDF entregue: RF3, RF4, RF8 e RF9.
 // 1. REGRAS DE NEGÓCIO: valores revisados no PDF da AP2.
 const RULES = {
     loanDays: 7,           // RF3: prazo de devolução
@@ -835,7 +834,7 @@ function staffCatalog() {
     `;
 }
 
-// Ficha dedicada do exemplar, conforme a seção 4.4.2 da AP2.
+// Ficha dedicada do exemplar
 function bookDetailsPage() {
     const book = $book(selectedBookId) || db.books[0];
     if (!book) return '<p>Nenhuma obra cadastrada.</p>';
